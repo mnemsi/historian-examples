@@ -26,8 +26,7 @@ sudo ./bin/install.sh
 ```
 ## Setup Apache Solr
 Apache solr is a database used by solr that could be replaced by other databases.
-After downloading the 8.2.0 verion and unzipping it, get into solr
-directory and run these command to start two solr servers:
+To start solr, get into solr directory and run these command to start two solr servers:
 ```
 ./bin/solr start -cloud -s ./data/solr/node1 -p 8983
 ./bin/solr start -cloud -s ./data/solr/node2 -p 7574 -z localhost:9983
@@ -38,5 +37,8 @@ Clone this project from github, open it with your IDE and built the project usin
 ```
 mvn clean install
 ```
+
+To get more details we invite you to check this link:
+[Spark API tutorial](https://github.com/Hurence/historian/blob/documentation-spark-api/docs/spark-api/asciidoc/fr/exemple_spark_api.ad)
 
 
