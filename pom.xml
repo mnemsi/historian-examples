@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>spark API tutorial</artifactId>
+    <artifactId>spark_API_tutorial</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

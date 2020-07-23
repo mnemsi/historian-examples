@@ -7,13 +7,14 @@ import com.hurence.historian.spark.sql.reader.MeasuresReaderType
 import com.hurence.historian.spark.sql.reader.ReaderFactory
 import com.hurence.historian.spark.sql.writer.{WriterFactory, WriterType}
 import org.apache.spark.sql.SparkSession
+import scala.io.Source
 
 object JustSimpleTest {
 
   def main(args: Array[String]): Unit = {
 
 
-    val origpath = "/home/nemsi/Work/historian/loader/src/test/resources/it-data-4metrics.csv.gz"
+    val origpath = getClass.getResource("/it-data-4metrics.csv.gz").getPath
 
     val spark = SparkSession.builder
       .config("spark.master", "local[1]")
